@@ -3,7 +3,7 @@
 A static, blog-style web version of the survey *"Toward the Science of Multi-Agent
 Communication: A Comprehensive Survey."*
 
-**Live site:** https://yifang99.github.io/Communication-survey-host/
+**Live site:** https://yifang99.github.io/Towards-The-Science-of-Agent-Communication/
 
 ## Contents
 
