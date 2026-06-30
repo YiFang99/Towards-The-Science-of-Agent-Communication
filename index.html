@@ -653,15 +653,18 @@ agents use the channel at all <span class="citation"
 data-cites="eccles2019biasesemergentcommunicationmultiagent">(<a
 href="#ref-eccles2019biasesemergentcommunicationmultiagent"
 role="doc-biblioref">Eccles et al., 2019</a>)</span>.
-<em>Compositionality</em> is promoted by generalization pressure <span
-class="citation"
-data-cites="luna2020internal kottur2017natural resnick2020capacitybandwidthcompositionalityemergent mu2022emergentcommunicationgeneralizations">(<a
+<em>Compositionality</em> is promoted by capacity and bandwidth
+constraints that force efficient encoding <span class="citation"
+data-cites="kottur2017natural resnick2020capacitybandwidthcompositionalityemergent">(<a
 href="#ref-kottur2017natural" role="doc-biblioref">Kottur et al.,
-2017</a>; <a href="#ref-luna2020internal" role="doc-biblioref">Luna et
-al., 2020</a>; <a href="#ref-mu2022emergentcommunicationgeneralizations"
-role="doc-biblioref">Mu &amp; Goodman, 2021</a>; <a
+2017</a>; <a
 href="#ref-resnick2020capacitybandwidthcompositionalityemergent"
-role="doc-biblioref">Resnick et al., 2020</a>)</span>, teaching across
+role="doc-biblioref">Resnick et al., 2020</a>)</span>, by generalization
+pressure <span class="citation"
+data-cites="luna2020internal mu2022emergentcommunicationgeneralizations">(<a
+href="#ref-luna2020internal" role="doc-biblioref">Luna et al., 2020</a>;
+<a href="#ref-mu2022emergentcommunicationgeneralizations"
+role="doc-biblioref">Mu &amp; Goodman, 2021</a>)</span>, teaching across
 fresh or successive learners <span class="citation"
 data-cites="li2019easeofteachinglanguagestructureemergent ren2020compositionallanguagesemergeneural">(<a
 href="#ref-li2019easeofteachinglanguagestructureemergent"
@@ -669,9 +672,7 @@ role="doc-biblioref">F. Li &amp; Bowling, 2019</a>; <a
 href="#ref-ren2020compositionallanguagesemergeneural"
 role="doc-biblioref">Ren et al., 2020</a>)</span>, and structurally
 mirrored referent and message spaces <span class="citation"
-data-cites="lazaridou2018emergencelinguisticcommunicationreferential choi2018compositionalobvertercommunicationlearning">(<a
-href="#ref-choi2018compositionalobvertercommunicationlearning"
-role="doc-biblioref">Choi et al., 2018</a>; <a
+data-cites="lazaridou2018emergencelinguisticcommunicationreferential">(<a
 href="#ref-lazaridou2018emergencelinguisticcommunicationreferential"
 role="doc-biblioref">Lazaridou et al., 2018</a>)</span>, though it is
 neither automatic nor strictly necessary for generalization <span
@@ -716,8 +717,9 @@ role="doc-biblioref">Taniguchi et al., 2025</a>)</span>.</p>
 <section id="sec:format-symbolic-nl" class="level3">
 <h3>3.2.2  Natural Language</h3>
 <p>NL uses a vocabulary inherited from large-scale pretraining,
-bypassing the protocol-acquisition phase that defines EL; tokens remain
-human-interpretable by construction <span class="citation"
+bypassing the protocol-acquisition phase that defines EL; tokens inherit
+a human-interpretable vocabulary from pretraining, though task
+adaptation can induce drift <span class="citation"
 data-cites="lazaridou-etal-2020-multi">(<a
 href="#ref-lazaridou-etal-2020-multi" role="doc-biblioref">Lazaridou et
 al., 2020</a>)</span>. Across LLM-based systems, the role NL plays
@@ -804,12 +806,11 @@ href="#ref-yang2025surveyaiagentprotocols" role="doc-biblioref">Y. Yang
 et al., 2025</a>)</span>. <em>Imperative code</em> uses
 programming-language syntax as the vocabulary, with
 Code-as-Policies <span class="citation" data-cites="10160591">(<a
-href="#ref-10160591" role="doc-biblioref">J. Liang et al.,
-2023</a>)</span> and CodeAct <span class="citation"
-data-cites="wang2024executable">(<a href="#ref-wang2024executable"
-role="doc-biblioref">X. Wang et al., 2024</a>)</span> treating
-executable Python as the action substrate, and compositional
-coordination <span class="citation"
+href="#ref-10160591" role="doc-biblioref">Liang et al., 2023</a>)</span>
+and CodeAct <span class="citation" data-cites="wang2024executable">(<a
+href="#ref-wang2024executable" role="doc-biblioref">X. Wang et al.,
+2024</a>)</span> treating executable Python as the action substrate, and
+compositional coordination <span class="citation"
 data-cites="huang2025compositionalcoordinationmultirobotteams">(<a
 href="#ref-huang2025compositionalcoordinationmultirobotteams"
 role="doc-biblioref">Z. Huang et al., 2025</a>)</span> extending this to
@@ -868,7 +869,8 @@ class="citation"
 data-cites="jiang2018learningattentionalcommunicationmultiagent">(<a
 href="#ref-jiang2018learningattentionalcommunicationmultiagent"
 role="doc-biblioref">Jiang &amp; Lu, 2018</a>)</span> and TarMAC using
-signature-based attention to target what to send <span class="citation"
+signature-based attention to target whom to address <span
+class="citation"
 data-cites="das2020tarmactargetedmultiagentcommunication">(<a
 href="#ref-das2020tarmactargetedmultiagentcommunication"
 role="doc-biblioref">Das et al., 2019</a>)</span>, followed by
@@ -915,14 +917,14 @@ href="#ref-9636761" role="doc-biblioref">Glaser et al.,
 2021</a>)</span>, and When2com <span class="citation"
 data-cites="liu2020when2com">(<a href="#ref-liu2020when2com"
 role="doc-biblioref">Y.-C. Liu, Tian, Glaser, et al., 2020</a>)</span>
-and Who2com <span class="citation" data-cites="liu2020who2com">(<a
+adds learned communication-graph grouping while Who2com <span
+class="citation" data-cites="liu2020who2com">(<a
 href="#ref-liu2020who2com" role="doc-biblioref">Y.-C. Liu, Tian, Ma, et
-al., 2020</a>)</span> add learned communication-graph grouping and
-handshake selection over which peers exchange those features.
-<em>Activation sharing in LLM agents</em> injects hidden states rather
-than feature maps: Communicating Activations explores functional forms
-for combining hidden states at an intermediate layer <span
-class="citation"
+al., 2020</a>)</span> adds learnable handshake selection over which
+peers exchange those features. <em>Activation sharing in LLM agents</em>
+injects hidden states rather than feature maps: Communicating
+Activations explores functional forms for combining hidden states at an
+intermediate layer <span class="citation"
 data-cites="ramesh2025communicatingactivationslanguagemodel">(<a
 href="#ref-ramesh2025communicatingactivationslanguagemodel"
 role="doc-biblioref">Ramesh &amp; Li, 2025</a>)</span>, Thought
@@ -1109,8 +1111,8 @@ role="doc-biblioref">Yadav et al., 2023</a>)</span>, DARE by randomly
 dropping and rescaling delta entries <span class="citation"
 data-cites="yu2024languagemodelssupermario">(<a
 href="#ref-yu2024languagemodelssupermario" role="doc-biblioref">L. Yu et
-al., 2024</a>)</span>, adaptive schemes by learning per-layer merge
-coefficients <span class="citation"
+al., 2024</a>)</span>, adaptive schemes by learning layer-wise or
+finer-grained scaling coefficients <span class="citation"
 data-cites="yang2024adamergingadaptivemodelmerging gauthiercaron2024mergingbottledifferentiableadaptive">(<a
 href="#ref-gauthiercaron2024mergingbottledifferentiableadaptive"
 role="doc-biblioref">Gauthier-Caron et al., 2024</a>; <a
@@ -1304,8 +1306,8 @@ maintained belief set <span class="citation"
 data-cites="alchourron1985logic">(<a href="#ref-alchourron1985logic"
 role="doc-biblioref">Alchourrón et al., 1985</a>)</span>.</p>
 <p>Its LLM instances keep this truth-seeking structure:
-confidence-weighted round-table consensus reweights peers by
-reliability <span class="citation"
+confidence-weighted round-table consensus reweights peers by their
+self-reported confidence <span class="citation"
 data-cites="chen-etal-2024-reconcile">(<a
 href="#ref-chen-etal-2024-reconcile" role="doc-biblioref">Chen, Saha, et
 al., 2024</a>)</span>, multi-agent debate, when aimed at factual
@@ -1327,16 +1329,17 @@ href="#ref-Li_Lou_Xu_Zhang_Fan_2025" role="doc-biblioref">D. Li et al.,
 <p>Because the estimate is only as reliable as its sources, robustness
 against malicious or unreliable reporters is layered on top.
 Byzantine-resilient aggregation such as Krum replaces naive averaging
-with the vector nearest the bulk of the others, discarding adversarial
-outliers <span class="citation" data-cites="blanchard2017machine">(<a
-href="#ref-blanchard2017machine" role="doc-biblioref">Blanchard et al.,
-2017</a>)</span>, rooted in Byzantine fault tolerance <span
-class="citation" data-cites="10.1145/357172.357176">(<a
-href="#ref-10.1145/357172.357176" role="doc-biblioref">Lamport et al.,
-1982</a>)</span>. Adversarial-consensus mechanisms such as ROBOSAC
-resample random subsets of collaborators until the fused result agrees
-with the ego agent’s own perception, isolating an attacker-free subset
-without knowing the attack <span class="citation"
+with the vector minimizing the summed distance to its nearest neighbors,
+discarding adversarial outliers <span class="citation"
+data-cites="blanchard2017machine">(<a href="#ref-blanchard2017machine"
+role="doc-biblioref">Blanchard et al., 2017</a>)</span>, rooted in
+Byzantine fault tolerance <span class="citation"
+data-cites="10.1145/357172.357176">(<a href="#ref-10.1145/357172.357176"
+role="doc-biblioref">Lamport et al., 1982</a>)</span>.
+Adversarial-consensus mechanisms such as ROBOSAC resample random subsets
+of collaborators until the fused result agrees with the ego agent’s own
+perception, isolating an attacker-free subset without knowing the
+attack <span class="citation"
 data-cites="li2023usadversariallyrobustcollaborative">(<a
 href="#ref-li2023usadversariallyrobustcollaborative"
 role="doc-biblioref">Li et al., 2023</a>)</span>.</p>
@@ -1361,9 +1364,9 @@ a true lineage of identity, timing, and supporting evidence, as when
 agent cards expose sender identity <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
 href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span> or retrieval-augmented generation surfaces the passages
-supporting a claim <span class="citation"
-data-cites="lewis2020retrievalaugmented">(<a
+2025</a>)</span> or retrieval-augmented generation grounds a claim in
+retrieved passages that can be inspected as its support <span
+class="citation" data-cites="lewis2020retrievalaugmented">(<a
 href="#ref-lewis2020retrievalaugmented" role="doc-biblioref">P. Lewis et
 al., 2020</a>)</span>. A per-detection confidence score, as in
 RayFusion, where a sender broadcasts only its top-confidence instance
@@ -1421,10 +1424,11 @@ href="#ref-10.1145/3586183.3606763" role="doc-biblioref">Park et al.,
 data-cites="zheng2025thoughtcommunicationmultiagentcollaboration">(<a
 href="#ref-zheng2025thoughtcommunicationmultiagentcollaboration"
 role="doc-biblioref">Zheng et al., 2025</a>)</span>, which aids
-debate-based coordination but exposes the sender to manipulation in
-non-cooperative settings. <em>Capabilities</em> (tool access, knowledge
-domains) are formalized by structured schemas such as A2A agent
-cards <span class="citation" data-cites="a2aAgent2AgentProtocol2025">(<a
+debate-based coordination, though disclosing reasoning at this depth
+also widens what an untrusted peer could exploit. <em>Capabilities</em>
+(tool access, knowledge domains) are formalized by structured schemas
+such as A2A agent cards <span class="citation"
+data-cites="a2aAgent2AgentProtocol2025">(<a
 href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
 2025</a>)</span> and MCP tool schemas <span class="citation"
 data-cites="mcpModelContextProtocol2024">(<a
@@ -1466,26 +1470,28 @@ since shared updates can be inverted to reconstruct private training
 examples <span class="citation"
 data-cites="zhu2019deepleakagegradients">(<a
 href="#ref-zhu2019deepleakagegradients" role="doc-biblioref">L. Zhu et
-al., 2019</a>)</span> or to expose training-set membership <span
-class="citation" data-cites="shokri2017membership">(<a
-href="#ref-shokri2017membership" role="doc-biblioref">Shokri et al.,
-2017</a>)</span>. This motivates privacy-preserving aggregation <span
-class="citation" data-cites="warnat2021swarm">(<a
-href="#ref-warnat2021swarm" role="doc-biblioref">Warnat-Herresthal et
-al., 2021</a>)</span> and private federated fine-tuning, as in Fed-SB,
-which shares only a tiny square matrix between frozen low-rank adapters,
-so its small parameter count lowers the differential-privacy noise
-needed to mask each client’s data <span class="citation"
+al., 2019</a>)</span> or, even with query-only access, to expose
+training-set membership <span class="citation"
+data-cites="shokri2017membership">(<a href="#ref-shokri2017membership"
+role="doc-biblioref">Shokri et al., 2017</a>)</span>. This motivates
+privacy-preserving aggregation <span class="citation"
+data-cites="warnat2021swarm">(<a href="#ref-warnat2021swarm"
+role="doc-biblioref">Warnat-Herresthal et al., 2021</a>)</span> and
+private federated fine-tuning, as in Fed-SB, which shares only a tiny
+square matrix between frozen low-rank adapters, so its small parameter
+count lowers the differential-privacy noise needed to mask each client’s
+data <span class="citation"
 data-cites="singhal2025fedsbsilverbulletextreme">(<a
 href="#ref-singhal2025fedsbsilverbulletextreme"
 role="doc-biblioref">Singhal et al., 2025</a>)</span>. Sharing
-activations such as thought communication <span class="citation"
+activations, as in thought communication <span class="citation"
 data-cites="zheng2025thoughtcommunicationmultiagentcollaboration">(<a
 href="#ref-zheng2025thoughtcommunicationmultiagentcollaboration"
-role="doc-biblioref">Zheng et al., 2025</a>)</span> similarly exposes
-reasoning processes that may be exploitable in competitive settings. The
-response is <em>asymmetric</em> disclosure, withholding self-information
-selectively by context, rather than uniform transparency.</p>
+role="doc-biblioref">Zheng et al., 2025</a>)</span>, likewise exposes
+reasoning processes that, by the same trust-regime logic, become
+exploitable once peers cannot be fully trusted. The response is
+<em>asymmetric</em> disclosure, withholding self-information selectively
+by context, rather than uniform transparency.</p>
 </section>
 <section id="sec:content-self-inference" class="level3">
 <h3>4.2.3  Behavioral Inference</h3>
@@ -1627,8 +1633,8 @@ class="citation"
 data-cites="rysbek2023proactiverobotcontrolcollaborative">(<a
 href="#ref-rysbek2023proactiverobotcontrolcollaborative"
 role="doc-biblioref">Rysbek et al., 2024</a>)</span>, and incompatible
-plans are resolved through interaction forces in which the dominant
-partner prevails <span class="citation"
+plans are resolved through back-and-forth interaction forces by which
+partners negotiate roles and reach consensus <span class="citation"
 data-cites="10.1145/3577190.3614174">(<a
 href="#ref-10.1145/3577190.3614174" role="doc-biblioref">Rysbek et al.,
 2023</a>)</span>, the Sensory-format realization of the commitment and
@@ -1923,8 +1929,9 @@ before its content can be independently verified the way a Fact’s can,
 leaving the smallest window for defense. Adversarial robustness
 therefore degrades along the Fact <span
 class="math inline">\(\rightarrow\)</span> Intent <span
-class="math inline">\(\rightarrow\)</span> Control ordering, consistent
-with demonstrated adversarial-communication risk <span class="citation"
+class="math inline">\(\rightarrow\)</span> Control ordering, extending
+the adversarial-communication risk demonstrated by <span
+class="citation"
 data-cites="blumenkamp2020emergenceadversarialcommunicationmultiagent">(<a
 href="#ref-blumenkamp2020emergenceadversarialcommunicationmultiagent"
 role="doc-biblioref">Blumenkamp &amp; Prorok, 2021</a>)</span>. These
@@ -1946,9 +1953,10 @@ role="doc-biblioref">Greshake et al., 2023</a>)</span>; and a Parameter
 channel is the most exposed of all, since a poisoned update persists in
 <span class="math inline">\(\theta\)</span> across sessions until
 explicitly overwritten or corrected. Training-time defenses such as
-message dropout <span class="citation" data-cites="kim2019message">(<a
-href="#ref-kim2019message" role="doc-biblioref">W. Kim et al.,
-2019</a>)</span> and temporal message control <span class="citation"
+message dropout for robustness to message loss <span class="citation"
+data-cites="kim2019message">(<a href="#ref-kim2019message"
+role="doc-biblioref">W. Kim et al., 2019</a>)</span> and temporal
+message control <span class="citation"
 data-cites="zhang2020succinctrobustmultiagentcommunication">(<a
 href="#ref-zhang2020succinctrobustmultiagentcommunication"
 role="doc-biblioref">S. Q. Zhang et al., 2020</a>)</span> complement
@@ -2178,8 +2186,8 @@ over the communication topology itself.</p>
 Intent is declared proactively before action so recipients can adapt,
 Control is issued reactively when a coordination gap is detected or
 authority must be asserted, and Self-state is disclosed at join and
-thereafter on state-change, when a condition crosses a relevance
-threshold <span class="citation"
+thereafter on state-change, gated by a learned relevance criterion <span
+class="citation"
 data-cites="singh2018learningcommunicatescalemultiagent kim2019learning">(<a
 href="#ref-kim2019learning" role="doc-biblioref">D. Kim et al.,
 2019</a>; <a href="#ref-singh2018learningcommunicatescalemultiagent"
@@ -2274,12 +2282,10 @@ data-cites="harding-graesser-etal-2019-emergent">(<a
 href="#ref-harding-graesser-etal-2019-emergent"
 role="doc-biblioref">Harding Graesser et al., 2019</a>)</span>, and
 multi-agent debate among LLMs <span class="citation"
-data-cites="du2024improving liang-etal-2024-encouraging">(<a
-href="#ref-du2024improving" role="doc-biblioref">Du et al., 2024</a>; <a
-href="#ref-liang-etal-2024-encouraging" role="doc-biblioref">T. Liang et
-al., 2024</a>)</span>, each collecting competing claims and reconciling
-them into a revised consensus. Table 8 catalogs all eight
-correspondences with per-paradigm instances.</p>
+data-cites="du2024improving">(<a href="#ref-du2024improving"
+role="doc-biblioref">Du et al., 2024</a>)</span>, each collecting
+competing claims and reconciling them into a revised consensus. Table 8
+catalogs all eight correspondences with per-paradigm instances.</p>
 <figure id="tab:invariance-catalog">
 <a href="assets/tab_invariance_catalog.png" target="_blank" rel="noopener" class="imgzoom"><img src="assets/tab_invariance_catalog.png" /></a>
 <figcaption>Paradigm-invariant structural patterns developed in
@@ -2314,24 +2320,24 @@ role="doc-biblioref">R. Wang et al., 2020</a>)</span>, bounds the
 Bandwidth axis.</p></li>
 <li><p><em>Lipschitz bounds</em> on the receiver’s read-out formalize
 Robustness: the worst-case behavioral change is controlled by the
-product of the receiver’s Lipschitz constant, estimable for
+product of the receiver’s Lipschitz constant, estimable for L2
 self-attention read-outs <span class="citation"
 data-cites="kim2021lipschitz">(<a href="#ref-kim2021lipschitz"
 role="doc-biblioref">H. Kim et al., 2021</a>)</span>, and the spectral
 norm <span class="math inline">\(\|E\|_{\text{op}}\)</span> of the
 channel’s injection matrix.</p></li>
-<li><p><em>Communication complexity</em>, importing Dec-POMDP <span
-class="citation"
+<li><p><em>Communication complexity</em>, drawing on
+decentralized-decision theory <span class="citation"
 data-cites="doi:10.1287/moor.27.4.819.297 pynadath2002communicative goldman2004decentralized">(<a
 href="#ref-doi:10.1287/moor.27.4.819.297" role="doc-biblioref">Bernstein
 et al., 2002</a>; <a href="#ref-goldman2004decentralized"
 role="doc-biblioref">Goldman &amp; Zilberstein, 2004</a>; <a
 href="#ref-pynadath2002communicative" role="doc-biblioref">Pynadath
-&amp; Tambe, 2002</a>)</span> and two-party bounds <span
+&amp; Tambe, 2002</a>)</span> and two-party communication bounds <span
 class="citation" data-cites="kushilevitz1997communication">(<a
 href="#ref-kushilevitz1997communication"
-role="doc-biblioref">Kushilevitz, 1997</a>)</span>, lower-bounds the
-messages a task requires.</p></li>
+role="doc-biblioref">Kushilevitz, 1997</a>)</span>, could lower-bound
+the messages a task requires.</p></li>
 <li><p><em>Rate-distortion of <span
 class="math inline">\(m\)</span></em> <span class="citation"
 data-cites="9955525">(<a href="#ref-9955525" role="doc-biblioref">Gündüz
@@ -2372,8 +2378,8 @@ exploring the Format <span class="math inline">\(\times\)</span> Content
 matrix one row at a time rather than composing across it. <em>Adaptive
 format selection</em> would let agents choose channels per message
 according to content, bandwidth, and receiver capability; early
-meta-protocols already negotiate per message between structured
-routines, natural language, and generated code to trade off versatility,
+meta-protocols already select dynamically among structured routines,
+natural language, and generated code to trade off versatility,
 efficiency, and portability <span class="citation"
 data-cites="marro2024agorascalable">(<a
 href="#ref-marro2024agorascalable" role="doc-biblioref">Marro et al.,
@@ -3193,11 +3199,9 @@ interoperability, whereas emergent language is opaque <span
 class="citation"
 data-cites="lowe2019pitfallsmeasuringemergentcommunication">(<a
 href="#ref-lowe2019pitfallsmeasuringemergentcommunication"
-role="doc-biblioref">Lowe et al., 2019</a>)</span> with limited
+role="doc-biblioref">Lowe et al., 2019</a>)</span> with often-limited
 generalization <span class="citation"
-data-cites="lazaridou2017multiagentcooperationemergencenatural kharitonov2020emergentlanguagegeneralizationacquisition">(<a
-href="#ref-kharitonov2020emergentlanguagegeneralizationacquisition"
-role="doc-biblioref">Kharitonov &amp; Baroni, 2020</a>; <a
+data-cites="lazaridou2017multiagentcooperationemergencenatural">(<a
 href="#ref-lazaridou2017multiagentcooperationemergencenatural"
 role="doc-biblioref">Lazaridou et al., 2017</a>)</span>.</p></li>
 <li><p><strong>Latent.</strong> Three properties are <em>inherent</em>:
@@ -3869,8 +3873,9 @@ class="citation"
 data-cites="10.5555/3306127.3331951 zhang2024ppsqmixperiodicallyparametersharing">(<a
 href="#ref-10.5555/3306127.3331951" role="doc-biblioref">Cicek et al.,
 2019</a>; <a href="#ref-zhang2024ppsqmixperiodicallyparametersharing"
-role="doc-biblioref">K. Zhang et al., 2024</a>)</span>, attention-based
-contextual aggregation <span class="citation"
+role="doc-biblioref">K. Zhang et al., 2024</a>)</span> loosen coupling
+in time to let agents specialize, while attention-based contextual
+aggregation <span class="citation"
 data-cites="hebert2023fedformercontextualfederationattention">(<a
 href="#ref-hebert2023fedformercontextualfederationattention"
 role="doc-biblioref">Hebert et al., 2023</a>)</span>, momentum-based
@@ -3938,17 +3943,14 @@ data-cites="a2aAgent2AgentProtocol2025">(<a
 href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
 2025</a>)</span> extend with structured JSON schemas that increase
 receiver risk by exposing underspecified fields whose interpretation
-depends on runtime, and third-generation protocols such as Code as
-Policies <span class="citation" data-cites="10160591">(<a
-href="#ref-10160591" role="doc-biblioref">J. Liang et al.,
-2023</a>)</span> and CodeAct <span class="citation"
-data-cites="wang2024executable">(<a href="#ref-wang2024executable"
-role="doc-biblioref">X. Wang et al., 2024</a>)</span> transmit
-executable code, eliminating ambiguity but requiring trust or
-sandboxing. An analogous trust burden would arise in Emergent Language
-whenever a learned protocol carries directive content: without an
-external schema to validate the directive, the receiver must rely on
-shared training dynamics for safety.</p>
+depends on runtime, and third-generation protocols such as CodeAct <span
+class="citation" data-cites="wang2024executable">(<a
+href="#ref-wang2024executable" role="doc-biblioref">X. Wang et al.,
+2024</a>)</span> transmit executable code, eliminating ambiguity but
+requiring trust or sandboxing. An analogous trust burden would arise in
+Emergent Language whenever a learned protocol carries directive content:
+without an external schema to validate the directive, the receiver must
+rely on shared training dynamics for safety.</p>
 </section>
 <section id="f.4-bandwidth-fidelity-trade-off-across-format-depth"
 class="level2">
@@ -4388,14 +4390,6 @@ Association for Computational Linguistics: ACL 2025</em>, 11534–11557.
 <a
 href="https://doi.org/10.18653/v1/2025.findings-acl.601">https://doi.org/10.18653/v1/2025.findings-acl.601</a>
 </div>
-<div id="ref-choi2018compositionalobvertercommunicationlearning"
-class="csl-entry" role="listitem">
-Choi, E., Lazaridou, A., &amp; Freitas, N. de. (2018).
-<span>Compositional Obverter Communication Learning From Raw Visual
-Input</span>. <em>International Conference on Learning Representations
-(ICLR)</em>. <a
-href="https://openreview.net/forum?id=rknt2Be0-">https://openreview.net/forum?id=rknt2Be0-</a>
-</div>
 <div id="ref-pmlr-v139-christianos21a" class="csl-entry"
 role="listitem">
 Christianos, F., Papoudakis, G., Rahman, M. A., &amp; Albrecht, S. V.
@@ -4783,10 +4777,11 @@ href="https://arxiv.org/abs/2507.16068">https://arxiv.org/abs/2507.16068</a>
 </div>
 <div id="ref-ilharco2023editingmodelstaskarithmetic" class="csl-entry"
 role="listitem">
-Ilharco, G., Ribeiro, M. T., Wortsman, M., Schmidt, L., Hajishirzi, H.,
-&amp; Farhadi, A. (2023). Editing models with task arithmetic. <em>The
-Eleventh International Conference on Learning Representations,
-<span>ICLR</span> 2023, Kigali, Rwanda, May 1-5, 2023</em>. <a
+Ilharco, G., Ribeiro, M. T., Wortsman, M., Gururangan, S., Schmidt, L.,
+Hajishirzi, H., &amp; Farhadi, A. (2023). Editing models with task
+arithmetic. <em>The Eleventh International Conference on Learning
+Representations, <span>ICLR</span> 2023, Kigali, Rwanda, May 1-5,
+2023</em>. <a
 href="https://openreview.net/forum?id=6t0Kwf8-jrj">https://openreview.net/forum?id=6t0Kwf8-jrj</a>
 </div>
 <div id="ref-itani2023creating" class="csl-entry" role="listitem">
@@ -5028,15 +5023,6 @@ Florence, P., &amp; Zeng, A. (2023). Code as policies: Language model
 programs for embodied control. <em>2023 IEEE International Conference on
 Robotics and Automation (ICRA)</em>, 9493–9500. <a
 href="https://doi.org/10.1109/ICRA48891.2023.10160591">https://doi.org/10.1109/ICRA48891.2023.10160591</a>
-</div>
-<div id="ref-liang-etal-2024-encouraging" class="csl-entry"
-role="listitem">
-Liang, T., He, Z., Jiao, W., Wang, X., Wang, Y., Wang, R., Yang, Y.,
-Shi, S., &amp; Tu, Z. (2024). Encouraging divergent thinking in large
-language models through multi-agent debate. <em>Proceedings of the 2024
-Conference on Empirical Methods in Natural Language Processing</em>,
-17889–17904. <a
-href="https://aclanthology.org/2024.emnlp-main.992/">https://aclanthology.org/2024.emnlp-main.992/</a>
 </div>
 <div id="ref-lin2022teaching" class="csl-entry" role="listitem">
 Lin, S., Hilton, J., &amp; Evans, O. (2022). Teaching models to express
