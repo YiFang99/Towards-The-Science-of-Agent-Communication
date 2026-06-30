@@ -50,6 +50,11 @@ Compatibility</a></li>
 <li class="toc-l2"><a href="#coordination-purpose">6.4  Coordination Purpose</a></li>
 <li class="toc-l2"><a href="#sec:principles-transfer">6.5  Cross-Paradigm Transfer</a></li>
 <li class="toc-l1"><a href="#sec:future">7  Future Directions</a></li>
+<li class="toc-l2"><a href="#sec:future-theory">7.1  Quantitative Characterization of <span
+class="math inline">\(\mathcal{U}\)</span></a></li>
+<li class="toc-l2"><a href="#sec:future-heterogeneous">7.2  Heterogeneous Interoperability</a></li>
+<li class="toc-l2"><a href="#sec:future-cross-format">7.3  Composable Communication Architectures</a></li>
+<li class="toc-l2"><a href="#sec:future-safety">7.4  Trustworthy Communication</a></li>
 <li class="toc-l1"><a href="#sec:conclusion">8  Conclusion</a></li>
 <li class="toc-l1"><a href="#limitations">Limitations</a></li>
 <li class="toc-l1"><a href="#app:positioning">Appendix A:  Existing Surveys and Taxonomies</a></li>
@@ -285,9 +290,7 @@ early-2026 preprints across the MARL, Emergent Language, and LLM-agent
 literatures; we forgo a single-keyword database sweep, since no shared
 vocabulary spans the three communities. We compile the resulting works,
 organized by their Format <span class="math inline">\(\times\)</span>
-Content classification, in a continuously maintained GitHub repository
-at <a href="https://github.com/XXXX"
-class="uri">https://github.com/XXXX</a>.</p>
+Content classification.</p>
 </section>
 <section id="sec:definitions" class="level1">
 <h1>2  Definitions and Taxonomy</h1>
@@ -655,23 +658,23 @@ href="#ref-eccles2019biasesemergentcommunicationmultiagent"
 role="doc-biblioref">Eccles et al., 2019</a>)</span>.
 <em>Compositionality</em> is promoted by capacity and bandwidth
 constraints that force efficient encoding <span class="citation"
-data-cites="kottur2017natural resnick2020capacitybandwidthcompositionalityemergent">(<a
+data-cites="kottur2017natural resnick2020capacitybandwidthcompositionalityemergent luna2020internal">(<a
 href="#ref-kottur2017natural" role="doc-biblioref">Kottur et al.,
-2017</a>; <a
+2017</a>; <a href="#ref-luna2020internal" role="doc-biblioref">Luna et
+al., 2020</a>; <a
 href="#ref-resnick2020capacitybandwidthcompositionalityemergent"
 role="doc-biblioref">Resnick et al., 2020</a>)</span>, by generalization
 pressure <span class="citation"
-data-cites="luna2020internal mu2022emergentcommunicationgeneralizations">(<a
-href="#ref-luna2020internal" role="doc-biblioref">Luna et al., 2020</a>;
-<a href="#ref-mu2022emergentcommunicationgeneralizations"
+data-cites="mu2022emergentcommunicationgeneralizations">(<a
+href="#ref-mu2022emergentcommunicationgeneralizations"
 role="doc-biblioref">Mu &amp; Goodman, 2021</a>)</span>, teaching across
 fresh or successive learners <span class="citation"
 data-cites="li2019easeofteachinglanguagestructureemergent ren2020compositionallanguagesemergeneural">(<a
 href="#ref-li2019easeofteachinglanguagestructureemergent"
 role="doc-biblioref">F. Li &amp; Bowling, 2019</a>; <a
 href="#ref-ren2020compositionallanguagesemergeneural"
-role="doc-biblioref">Ren et al., 2020</a>)</span>, and structurally
-mirrored referent and message spaces <span class="citation"
+role="doc-biblioref">Ren et al., 2020</a>)</span>, and structured input
+spaces <span class="citation"
 data-cites="lazaridou2018emergencelinguisticcommunicationreferential">(<a
 href="#ref-lazaridou2018emergencelinguisticcommunicationreferential"
 role="doc-biblioref">Lazaridou et al., 2018</a>)</span>, though it is
@@ -797,11 +800,11 @@ data-cites="acpAgentCommunicationProtocol2025">(<a
 href="#ref-acpAgentCommunicationProtocol2025" role="doc-biblioref">BeeAI
 Project, IBM Research, 2025</a>)</span>, and A2A <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span> that standardize agent and tool interoperability
-through declarative JSON or API-style message schemas for discovery,
-message envelopes, and task lifecycles <span class="citation"
-data-cites="yang2025surveyaiagentprotocols">(<a
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span> that standardize agent and tool
+interoperability through declarative JSON or API-style message schemas
+for discovery, message envelopes, and task lifecycles <span
+class="citation" data-cites="yang2025surveyaiagentprotocols">(<a
 href="#ref-yang2025surveyaiagentprotocols" role="doc-biblioref">Y. Yang
 et al., 2025</a>)</span>. <em>Imperative code</em> uses
 programming-language syntax as the vocabulary, with
@@ -1152,10 +1155,9 @@ achieving the lowest parameter-level bandwidth at the cost of base-model
 compatibility. In <em>peer transfer</em>, agents distill expert
 knowledge into adapters and distribute them across the network <span
 class="citation" data-cites="11134386">(<a href="#ref-11134386"
-role="doc-biblioref">J. Hu &amp; Ye Li, 2025</a>)</span>. Fed-SB
-aggregates LoRA-based low-rank updates across agents through a central
-server <span class="citation"
-data-cites="singhal2025fedsbsilverbulletextreme">(<a
+role="doc-biblioref">J. Hu &amp; Li, 2025</a>)</span>. Fed-SB aggregates
+LoRA-based low-rank updates across agents through a central server <span
+class="citation" data-cites="singhal2025fedsbsilverbulletextreme">(<a
 href="#ref-singhal2025fedsbsilverbulletextreme"
 role="doc-biblioref">Singhal et al., 2025</a>)</span>, while a
 decentralized variant does so via peer-to-peer synchronization <span
@@ -1363,9 +1365,9 @@ which carries a source tag. At the other, provenance-tagged facts attach
 a true lineage of identity, timing, and supporting evidence, as when
 agent cards expose sender identity <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span> or retrieval-augmented generation grounds a claim in
-retrieved passages that can be inspected as its support <span
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span> or retrieval-augmented generation grounds a
+claim in retrieved passages that can be inspected as its support <span
 class="citation" data-cites="lewis2020retrievalaugmented">(<a
 href="#ref-lewis2020retrievalaugmented" role="doc-biblioref">P. Lewis et
 al., 2020</a>)</span>. A per-detection confidence score, as in
@@ -1429,8 +1431,8 @@ also widens what an untrusted peer could exploit. <em>Capabilities</em>
 (tool access, knowledge domains) are formalized by structured schemas
 such as A2A agent cards <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span> and MCP tool schemas <span class="citation"
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span> and MCP tool schemas <span class="citation"
 data-cites="mcpModelContextProtocol2024">(<a
 href="#ref-mcpModelContextProtocol2024" role="doc-biblioref">Anthropic,
 2024</a>)</span>. MARL has no comparable disclosure primitive; agent
@@ -1445,8 +1447,8 @@ observations or state that agents already exchange; it becomes explicit
 only in protocols, tracked through the task lifecycle in standards such
 as A2A <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span>.</p>
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span>.</p>
 </section>
 <section id="sec:content-self-trust" class="level3">
 <h3>4.2.2  Trust Regimes</h3>
@@ -1677,11 +1679,11 @@ href="#ref-li2023camelcommunicativeagentsmind" role="doc-biblioref">G.
 Li et al., 2023</a>)</span>, or dynamic with runtime discovery via A2A
 agent cards <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span>. Hierarchical RL hard-codes a manager-worker authority
-relation within a single agent, as in FeUdal Networks where a
-slow-timescale manager sets abstract sub-goals that a fast-timescale
-worker acts to fulfill <span class="citation"
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span>. Hierarchical RL hard-codes a
+manager-worker authority relation within a single agent, as in FeUdal
+Networks where a slow-timescale manager sets abstract sub-goals that a
+fast-timescale worker acts to fulfill <span class="citation"
 data-cites="vezhnevets2017feudal">(<a href="#ref-vezhnevets2017feudal"
 role="doc-biblioref">Vezhnevets et al., 2017</a>)</span>, an intra-agent
 analogue of the inter-agent authority we consider, while in open
@@ -1745,18 +1747,18 @@ lifecycles, exposing each transition as an observable event (A2A:
 submitted <span class="math inline">\(\to\)</span> working <span
 class="math inline">\(\to\)</span> completed/failed <span
 class="citation" data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span>). Most LLM multi-agent systems instead leave compliance
-implicit, inferring it from the receiver’s next message, which works for
-trusted teams but fails in open systems where untrusted receivers may
-falsely report success or silently drop directives. Agents that
-fabricate shortcut solutions misrepresenting task completion <span
-class="citation" data-cites="xu2024theagentcompany">(<a
-href="#ref-xu2024theagentcompany" role="doc-biblioref">F. F. Xu et al.,
-2025</a>)</span> exemplify the no-verification and
-information-withholding failure modes the empirical MAST taxonomy
-isolates across multi-agent LLM frameworks <span class="citation"
-data-cites="cemri2025multiagentllmsystemsfail">(<a
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span>). Most LLM multi-agent systems instead
+leave compliance implicit, inferring it from the receiver’s next
+message, which works for trusted teams but fails in open systems where
+untrusted receivers may falsely report success or silently drop
+directives. Agents that fabricate shortcut solutions misrepresenting
+task completion <span class="citation"
+data-cites="xu2024theagentcompany">(<a href="#ref-xu2024theagentcompany"
+role="doc-biblioref">F. F. Xu et al., 2025</a>)</span> exemplify the
+no-verification and information-withholding failure modes the empirical
+MAST taxonomy isolates across multi-agent LLM frameworks <span
+class="citation" data-cites="cemri2025multiagentllmsystemsfail">(<a
 href="#ref-cemri2025multiagentllmsystemsfail" role="doc-biblioref">Cemri
 et al., 2025</a>)</span>.</p>
 <figure id="tab:content-protocols">
@@ -2013,8 +2015,8 @@ interpretability metrics can be misleading <span class="citation"
 data-cites="lowe2019pitfallsmeasuringemergentcommunication">(<a
 href="#ref-lowe2019pitfallsmeasuringemergentcommunication"
 role="doc-biblioref">Lowe et al., 2019</a>)</span>, with alternative
-compositionality measures proposed in the same period <span
-class="citation"
+compositionality measures from representation learning proposed in the
+same period <span class="citation"
 data-cites="andreas2019measuringcompositionalityrepresentationlearning">(<a
 href="#ref-andreas2019measuringcompositionalityrepresentationlearning"
 role="doc-biblioref">Andreas, 2019</a>)</span>. Emergent languages
@@ -2301,9 +2303,9 @@ instantiated.</figcaption>
 <p>The analyses in §3–§5 surface structural gaps that span paradigms. We
 distill four research directions whose resolution would most directly
 extend the survey’s framework.</p>
-<section id="sec:future-theory" class="level4">
-<h4>Quantitative Characterization of <span
-class="math inline">\(\mathcal{U}\)</span>.</h4>
+<section id="sec:future-theory" class="level2">
+<h2>7.1  Quantitative Characterization of <span
+class="math inline">\(\mathcal{U}\)</span></h2>
 <p>Turning the taxonomic <span class="math inline">\(\mathcal{U}_h,
 \mathcal{U}_\theta\)</span> of §2.2 into predictive tools requires four
 refinements, three of which sharpen Pentagram axes, Bandwidth and
@@ -2345,8 +2347,8 @@ et al., 2023</a>)</span> sets the minimum bits needed to convey a
 continuous quantity at a given task tolerance.</p></li>
 </ul>
 </section>
-<section id="sec:future-heterogeneous" class="level4">
-<h4>Heterogeneous Interoperability.</h4>
+<section id="sec:future-heterogeneous" class="level2">
+<h2>7.2  Heterogeneous Interoperability</h2>
 <p>Almost every mechanism surveyed in §3 assumes homogeneous agents, yet
 deployed ecosystems mix vendors, foundation models, and sensor suites.
 Latent and Parameter channels demand aligned representation spaces
@@ -2371,8 +2373,8 @@ class="citation" data-cites="chen2025internetofagents">(<a
 href="#ref-chen2025internetofagents" role="doc-biblioref">W. Chen, You,
 et al., 2025</a>)</span>.</p>
 </section>
-<section id="sec:future-cross-format" class="level4">
-<h4>Composable Communication Architectures.</h4>
+<section id="sec:future-cross-format" class="level2">
+<h2>7.3  Composable Communication Architectures</h2>
 <p>Current systems fix a single communication format at design time,
 exploring the Format <span class="math inline">\(\times\)</span> Content
 matrix one row at a time rather than composing across it. <em>Adaptive
@@ -2388,8 +2390,8 @@ as <span class="math inline">\(m = \langle m^{\text{fact}},
 m^{\text{self}}, m^{\text{int}}, m^{\text{ctrl}} \rangle\)</span>,
 independently routing each slot.</p>
 </section>
-<section id="sec:future-safety" class="level4">
-<h4>Trustworthy Communication.</h4>
+<section id="sec:future-safety" class="level2">
+<h2>7.4  Trustworthy Communication</h2>
 <p>Open deployments expose communication to strategic adversaries <span
 class="citation"
 data-cites="blumenkamp2020emergenceadversarialcommunicationmultiagent">(<a
@@ -2586,7 +2588,7 @@ grounding, and language evolution within a fixed symbolic-discrete
 channel. <span class="citation" data-cites="peters2025emergent">Peters
 et al. (<a href="#ref-peters2025emergent"
 role="doc-biblioref">2025</a>)</span> develops this vocabulary most
-fully, building on the earlier framing of <span class="citation"
+fully, building on themes reviewed by <span class="citation"
 data-cites="lazaridou2020emergentmultiagentcommunicationdeep">Lazaridou
 &amp; Baroni (<a
 href="#ref-lazaridou2020emergentmultiagentcommunicationdeep"
@@ -2623,8 +2625,8 @@ alongside planning, tool use, and memory. <span class="citation"
 data-cites="tran2025multiagentcollaborationmechanismssurvey">Tran et al.
 (<a href="#ref-tran2025multiagentcollaborationmechanismssurvey"
 role="doc-biblioref">2025</a>)</span> focus specifically on
-collaboration mechanisms, role design, and prompt-based coordination
-protocols. <span class="citation"
+collaboration mechanisms, role design, and coordination protocols. <span
+class="citation"
 data-cites="aratchige2025llmsworkingharmonysurvey">Aratchige &amp;
 Ilmini (<a href="#ref-aratchige2025llmsworkingharmonysurvey"
 role="doc-biblioref">2025</a>)</span> survey technological aspects of
@@ -3377,7 +3379,7 @@ difficult.</p>
 <h2>D.6  Interpretability Measurement</h2>
 <p>Interpretability is the most contested dimension because no single
 metric captures all three levels of token, message, and intent.
-Available methods include interpretability analyses of emergent agent
+Available methods include interpretable-by-design emergent agent
 codes <span class="citation"
 data-cites="dessì2021interpretableagentcommunicationscratch">(<a
 href="#ref-dessì2021interpretableagentcommunicationscratch"
@@ -3720,8 +3722,9 @@ role="doc-biblioref">Sukhbaatar et al., 2016</a>)</span>, referential
 games <span class="citation"
 data-cites="lazaridou2017multiagentcooperationemergencenatural">(<a
 href="#ref-lazaridou2017multiagentcooperationemergencenatural"
-role="doc-biblioref">Lazaridou et al., 2017</a>)</span>, and NL scene
-descriptions <span class="citation"
+role="doc-biblioref">Lazaridou et al., 2017</a>)</span>, and NL
+communication of observed objects and task progress <span
+class="citation"
 data-cites="zhang2024buildingcooperativeembodiedagents">(<a
 href="#ref-zhang2024buildingcooperativeembodiedagents"
 role="doc-biblioref">Zhang et al., 2024</a>)</span>.</p></li>
@@ -3734,8 +3737,9 @@ href="#ref-pmlr-v80-rabinowitz18a" role="doc-biblioref">Rabinowitz et
 al., 2018</a>)</span>, instantiated by postural display, capability
 declarations <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span>, and latent-thought sharing <span class="citation"
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span>, and latent-thought sharing <span
+class="citation"
 data-cites="zheng2025thoughtcommunicationmultiagentcollaboration">(<a
 href="#ref-zheng2025thoughtcommunicationmultiagentcollaboration"
 role="doc-biblioref">Zheng et al., 2025</a>)</span>.</p></li>
@@ -3940,11 +3944,11 @@ data-cites="mcpModelContextProtocol2024">(<a
 href="#ref-mcpModelContextProtocol2024" role="doc-biblioref">Anthropic,
 2024</a>)</span> and A2A <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span> extend with structured JSON schemas that increase
-receiver risk by exposing underspecified fields whose interpretation
-depends on runtime, and third-generation protocols such as CodeAct <span
-class="citation" data-cites="wang2024executable">(<a
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span> extend with structured JSON schemas that
+increase receiver risk by exposing underspecified fields whose
+interpretation depends on runtime, and third-generation protocols such
+as CodeAct <span class="citation" data-cites="wang2024executable">(<a
 href="#ref-wang2024executable" role="doc-biblioref">X. Wang et al.,
 2024</a>)</span> transmit executable code, eliminating ambiguity but
 requiring trust or sandboxing. An analogous trust burden would arise in
@@ -4051,7 +4055,7 @@ following an advertise-discover-route pattern. In classical multi-agent
 systems and LLM ecosystems it is explicitly published for peers to
 discover and consume; in MARL the closest analogue is consumed
 internally rather than peer-published.</p>
-<p>In MARL, agent-type embeddings used by hypernetwork-based
+<p>In MARL, agent-identity or type embeddings used by hypernetwork-based
 policies <span class="citation"
 data-cites="tessera2025hypermarladaptivehypernetworksmultiagent">(<a
 href="#ref-tessera2025hypermarladaptivehypernetworksmultiagent"
@@ -4070,8 +4074,8 @@ role="doc-biblioref">Foundation for Intelligent Physical Agents (FIPA),
 2002</a>)</span> formalize capability advertisement through declarative
 schemas. In LLM agent ecosystems, A2A agent cards <span class="citation"
 data-cites="a2aAgent2AgentProtocol2025">(<a
-href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Google,
-2025</a>)</span> and MCP tool schemas <span class="citation"
+href="#ref-a2aAgent2AgentProtocol2025" role="doc-biblioref">Linux
+Foundation, 2025</a>)</span> and MCP tool schemas <span class="citation"
 data-cites="mcpModelContextProtocol2024">(<a
 href="#ref-mcpModelContextProtocol2024" role="doc-biblioref">Anthropic,
 2024</a>)</span> serve the same routing-and-coordination function with
@@ -4100,13 +4104,13 @@ criterion. In Emergent Language, inductive biases for positive
 signalling <span class="citation"
 data-cites="eccles2019biasesemergentcommunicationmultiagent">(<a
 href="#ref-eccles2019biasesemergentcommunicationmultiagent"
-role="doc-biblioref">Eccles et al., 2019</a>)</span> and message-cost
-regularization <span class="citation" data-cites="luna2020internal">(<a
-href="#ref-luna2020internal" role="doc-biblioref">Luna et al.,
-2020</a>)</span> push the emergent protocol toward informative-only
-messages. The same primitive appears in LLM agent systems, where agents
-can suppress redundant messages once a peer is inferred to already share
-the relevant context.</p>
+role="doc-biblioref">Eccles et al., 2019</a>)</span> and least-effort
+auxiliary objectives <span class="citation"
+data-cites="luna2020internal">(<a href="#ref-luna2020internal"
+role="doc-biblioref">Luna et al., 2020</a>)</span> push the emergent
+protocol toward informative-only messages. The same primitive appears in
+LLM agent systems, where agents can suppress redundant messages once a
+peer is inferred to already share the relevant context.</p>
 </section>
 <section id="f.8-asymmetric-sender-receiver-role-structure"
 class="level2">
@@ -4211,7 +4215,7 @@ Urmson, Ed.). Oxford University Press.
 </div>
 <div id="ref-austin1975things" class="csl-entry" role="listitem">
 Austin, J. L. (1975). <em>How to do things with words</em>. Harvard
-university press.
+University Press.
 </div>
 <div id="ref-pmlr-v108-bagdasaryan20a" class="csl-entry"
 role="listitem">
@@ -4585,8 +4589,7 @@ href="http://www.fipa.org/specs/fipa00061/SC00061G.html">http://www.fipa.org/spe
 <div id="ref-FU2025107093" class="csl-entry" role="listitem">
 Fu, S., Zhao, S., Li, T., &amp; Yan, Y. (2025). QTypeMix: Enhancing
 multi-agent cooperative strategies through heterogeneous and homogeneous
-value decomposition. <em>Neural Networks</em>, <em>184</em>, 107093.
-https://doi.org/<a
+value decomposition. <em>Neural Networks</em>, <em>184</em>, 107093. <a
 href="https://doi.org/10.1016/j.neunet.2024.107093">https://doi.org/10.1016/j.neunet.2024.107093</a>
 </div>
 <div id="ref-fu2026cachetocachedirectsemanticcommunication"
@@ -4636,12 +4639,6 @@ Goldman, C. V., &amp; Zilberstein, S. (2004). Decentralized control of
 cooperative systems: Categorization and complexity analysis. <em>Journal
 of Artificial Intelligence Research</em>, <em>22</em>, 143–174. <a
 href="https://doi.org/10.1613/jair.1427">https://doi.org/10.1613/jair.1427</a>
-</div>
-<div id="ref-a2aAgent2AgentProtocol2025" class="csl-entry"
-role="listitem">
-Google. (2025). <em>Agent2Agent (<span>A2A</span>) protocol
-specification</em>. <a
-href="https://a2a-protocol.org/latest/specification/">https://a2a-protocol.org/latest/specification/</a>
 </div>
 <div id="ref-greshake2023indirectpromptinjection" class="csl-entry"
 role="listitem">
@@ -4747,7 +4744,7 @@ Hu, H., Lerer, A., Peysakhovich, A., &amp; Foerster, J. (2020).
 Conference on Machine Learning</em>, 4399–4410.
 </div>
 <div id="ref-11134386" class="csl-entry" role="listitem">
-Hu, J., &amp; Ye Li, G. (2025). Distillation-enabled knowledge alignment
+Hu, J., &amp; Li, G. Y. (2025). Distillation-enabled knowledge alignment
 protocol for semantic communication in AI agent networks. <em>IEEE
 Communications Letters</em>, <em>29</em>(11), 2541–2545. <a
 href="https://doi.org/10.1109/LCOMM.2025.3601995">https://doi.org/10.1109/LCOMM.2025.3601995</a>
@@ -5029,6 +5026,12 @@ Lin, S., Hilton, J., &amp; Evans, O. (2022). Teaching models to express
 their uncertainty in words. <em>Transactions on Machine Learning
 Research</em>. <a
 href="https://openreview.net/forum?id=8s8K2UZGTZ">https://openreview.net/forum?id=8s8K2UZGTZ</a>
+</div>
+<div id="ref-a2aAgent2AgentProtocol2025" class="csl-entry"
+role="listitem">
+Linux Foundation. (2025). <em>Agent2Agent (<span>A2A</span>) protocol
+specification</em>. <a
+href="https://a2a-protocol.org/latest/specification/">https://a2a-protocol.org/latest/specification/</a>
 </div>
 <div id="ref-liu2020when2com" class="csl-entry" role="listitem">
 Liu, Y.-C., Tian, J., Glaser, N., &amp; Kira, Z. (2020).
@@ -5606,9 +5609,9 @@ Wolff, C., Mayer, J., Bruni, E., &amp; Ohmer, X. (2024).
 href="https://arxiv.org/abs/2408.14649">https://arxiv.org/abs/2408.14649</a>
 </div>
 <div id="ref-wong2023deep" class="csl-entry" role="listitem">
-Wong, A., Bäck, T., Kononova, A. V., et al. (2023). Deep multiagent
-reinforcement learning: Challenges and directions. <em>Artificial
-Intelligence Review</em>, <em>56</em>, 5023–5056. <a
+Wong, A., Bäck, T., Kononova, A. V., &amp; Plaat, A. (2023). Deep
+multiagent reinforcement learning: Challenges and directions.
+<em>Artificial Intelligence Review</em>, <em>56</em>, 5023–5056. <a
 href="https://doi.org/10.1007/s10462-022-10299-x">https://doi.org/10.1007/s10462-022-10299-x</a>
 </div>
 <div id="ref-woo2026prefillsharesharedprefillmodule" class="csl-entry"
