@@ -63,7 +63,7 @@ a:hover { text-decoration: underline; }
 .links .sep { color: var(--rule); margin: 0 0.2rem; }
 
 /* ---- citation box ---- */
-.cite-box { margin: 0 0 2rem; border: 1px solid var(--rule); border-radius: 6px; background: #f8f9fb; overflow: hidden; scroll-margin-top: 1rem; }
+.cite-box { margin: 2.5rem 0 1rem; border: 1px solid var(--rule); border-radius: 6px; background: #f8f9fb; overflow: hidden; scroll-margin-top: 1rem; }
 .cite-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.5rem 0.8rem; background: #eef1f6; border-bottom: 1px solid var(--rule); font-family: -apple-system, system-ui, sans-serif; font-size: 0.82rem; font-weight: 600; color: #444; }
 .copy-btn { font: inherit; font-size: 0.75rem; font-weight: 600; cursor: pointer; border: 1px solid #c7ccd6; background: #fff; color: #333; padding: 0.2rem 0.6rem; border-radius: 4px; }
 .copy-btn:hover { background: var(--link); color: #fff; border-color: var(--link); }
