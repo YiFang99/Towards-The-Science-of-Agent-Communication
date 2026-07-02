@@ -97,8 +97,17 @@ Compatibility</a></li>
   <h1 class="paper-title">Toward the Science of Multi-Agent Communication: A Comprehensive Survey</h1>
   <p class="authors">Yi Fang<sup>1</sup>, Jun Hou<sup>1</sup>, Priya Pitre<sup>1</sup>, Gaurav Srivastava<sup>1</sup>, Sirui Ding<sup>2</sup>, Xuan Wang<sup>1*</sup></p>
   <p class="affil">1: Virginia Tech · 2: Stanford University · * Corresponding author</p>
-  <p class="links"><a href="paper.pdf">PDF</a> <span class="sep">|</span> <a href="https://github.com/YiFang99/Towards-The-Science-of-Agent-Communication">GitHub</a></p>
+  <p class="links"><a href="paper.pdf">PDF</a> <span class="sep">|</span> <a href="https://github.com/YiFang99/Towards-The-Science-of-Agent-Communication">GitHub</a> <span class="sep">|</span> <a href="#citation">Cite</a></p>
 </header>
+<section id="citation" class="cite-box">
+  <div class="cite-head"><span>How to cite</span><button type="button" class="copy-btn" onclick="copyBib(this)">Copy BibTeX</button></div>
+  <pre id="bibtex">@misc{fang2026sciencemac,
+  title        = {Toward the Science of Multi-Agent Communication: A Comprehensive Survey},
+  author       = {Fang, Yi and Hou, Jun and Pitre, Priya and Srivastava, Gaurav and Ding, Sirui and Wang, Xuan},
+  year         = {2026},
+  howpublished = {\url{https://yifang99.github.io/Towards-The-Science-of-Agent-Communication/}}
+}</pre>
+</section>
 <article>
 <section id="abstract" class="level1 unnumbered">
 <h1 class="unnumbered">Abstract</h1>
@@ -5911,10 +5920,16 @@ href="https://arxiv.org/abs/2511.20639">https://arxiv.org/abs/2511.20639</a>
 </section>
 
 </article>
-<footer class="site-footer">
-  <p>Rendered from the LaTeX manuscript. Figures and comparison tables are typeset from the original sources.</p>
-</footer>
 </main>
 </div>
+<script>
+function copyBib(btn){
+  var t = document.getElementById('bibtex').textContent;
+  navigator.clipboard.writeText(t).then(function(){
+    var o = btn.textContent; btn.textContent = 'Copied!';
+    setTimeout(function(){ btn.textContent = o; }, 1500);
+  });
+}
+</script>
 </body>
 </html>
